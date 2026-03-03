@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajubabu Gutala| Legal & Tax Services</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 3D Canvas -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<!-- Floating Particles -->
+<div id="particles-container"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    Rajubabu Gutala
+    <span>Advocate & Tax Consultant </span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#strategy">Strategy</a></li>
+    <li><a href="#investment">Investment</a></li>
+    <li><a href="#employees">Employee A/C</a></li>
+    <li><a href="#compliance">ESI & PF</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- TICKER -->
+<div class="ticker-wrap" style="position:fixed;bottom:0;z-index:50;">
+  <div class="ticker-inner" id="ticker">
+    <div class="ticker-item"><span class="dot"></span>Income Tax Returns | Filing Deadline Alert</div>
+    <div class="ticker-item"><span class="dot"></span>GST Compliance | Monthly Filing</div>
+    <div class="ticker-item"><span class="dot"></span>PF & ESI | New Wage Code Updates</div>
+    <div class="ticker-item"><span class="dot"></span>TDS Returns | Q3 Due Date Approaching</div>
+    <div class="ticker-item"><span class="dot"></span>Investment Advisory | Market Insights</div>
+    <div class="ticker-item"><span class="dot"></span>Corporate Law | Annual Compliance</div>
+    <div class="ticker-item"><span class="dot"></span>Employee Salary Structuring | Tax Optimization</div>
+    <div class="ticker-item"><span class="dot"></span>Income Tax Returns | Filing Deadline Alert</div>
+    <div class="ticker-item"><span class="dot"></span>GST Compliance | Monthly Filing</div>
+    <div class="ticker-item"><span class="dot"></span>PF & ESI | New Wage Code Updates</div>
+    <div class="ticker-item"><span class="dot"></span>TDS Returns | Q3 Due Date Approaching</div>
+    <div class="ticker-item"><span class="dot"></span>Investment Advisory | Market Insights</div>
+    <div class="ticker-item"><span class="dot"></span>Corporate Law | Annual Compliance</div>
+    <div class="ticker-item"><span class="dot"></span>Employee Salary Structuring | Tax Optimization</div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Advocate · CPA · Financial Advisor</div>
+    <h1 class="hero-title">
+      Rajubabu Gutala
+      <span class="gold">Legal & Taxes</span>
+    </h1>
+    <p class="hero-sub">
+      "Defending your rights. Protecting your wealth. Building your legacy."
+    </p>
+    <div class="hero-ctas">
+      <a href="#services" class="btn-primary">Explore Services</a>
+      <a href="#contact" class="btn-outline">Free Consultation</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num" data-target="18">0</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="599">0</div>
+        <div class="stat-label">Clients Served</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="98">0</div>
+        <div class="stat-label">Success Rate %</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="20">0</div>
+        <div class="stat-label">Legal Awards</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-header reveal">
+    <span class="section-tag">What We Offer</span>
+    <h2 class="section-title">Scope of Services</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <span class="service-icon">⚖️</span>
+      <span class="service-num">01</span>
+      <div class="service-title">Legal Counsel</div>
+      <div class="service-desc">Expert legal advice across civil, criminal, corporate, and family law. From dispute resolution to contract drafting, we protect your interests at every step.</div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.1s">
+      <span class="service-icon">📊</span>
+      <span class="service-num">02</span>
+      <div class="service-title">Accounting & Audit</div>
+      <div class="service-desc">Comprehensive accounting solutions including statutory audits, internal audits, tax audits, and financial statement preparation aligned with regulatory standards.</div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.2s">
+      <span class="service-icon">🏛️</span>
+      <span class="service-num">03</span>
+      <div class="service-title">Corporate Law</div>
+      <div class="service-desc">Company incorporation, restructuring, mergers & acquisitions, shareholder agreements, and full ROC compliance management for corporates of all sizes.</div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.3s">
+      <span class="service-icon">🧾</span>
+      <span class="service-num">04</span>
+      <div class="service-title">Tax Planning & Returns</div>
+      <div class="service-desc">Strategic tax planning for individuals and businesses. Income Tax, GST, TDS, Advance Tax, and all returns filed with precision and maximum benefit.</div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.4s">
+      <span class="service-icon">💼</span>
+      <span class="service-num">05</span>
+      <div class="service-title">Financial Advisory</div>
+      <div class="service-desc">Holistic financial planning, budgeting, cash flow management, and MIS reporting to steer your business toward sustainable profitability.</div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.5s">
+      <span class="service-icon">🔐</span>
+      <span class="service-num">06</span>
+      <div class="service-title">Compliance Management</div>
+      <div class="service-desc">End-to-end statutory compliance — Labour laws, PF, ESI, Professional Tax, Shops Act registration, and periodic government filings managed seamlessly.</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ACCOUNTING STRATEGY -->
+<section id="strategy" class="strategy-section">
+  <div class="section-header reveal">
+    <span class="section-tag">Our Methodology</span>
+    <h2 class="section-title">Accounting Strategy</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="strategy-layout">
+    <div class="strategy-visual reveal">
+      <div class="strategy-3d-box box-float-1">
+        <div style="font-size:11px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:8px">Revenue</div>
+        <div style="font-family:'Playfair Display';font-size:24px;color:white">₹ 2.4 Cr</div>
+        <div style="font-size:11px;color:#4ADE80">↑ 18% YoY</div>
+      </div>
+      <div class="strategy-3d-box box-main">
+        <div style="font-size:11px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:16px">P&L Overview</div>
+        <div class="chart-bar-container">
+          <div class="chart-bar" style="height:60%"></div>
+          <div class="chart-bar" style="height:45%"></div>
+          <div class="chart-bar" style="height:80%"></div>
+          <div class="chart-bar" style="height:65%"></div>
+          <div class="chart-bar" style="height:90%"></div>
+          <div class="chart-bar" style="height:75%"></div>
+          <div class="chart-bar" style="height:100%"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:10px;color:rgba(245,240,232,0.4)">
+          <span>Q1</span><span>Q2</span><span>Q3</span><span>Q4</span><span>Q5</span><span>Q6</span><span>Q7</span>
+        </div>
+        <div style="margin-top:20px;font-size:12px;color:rgba(245,240,232,0.5)">Net Profit Growth — 3 Year Trend</div>
+      </div>
+      <div class="strategy-3d-box box-float-2">
+        <div style="font-size:11px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:8px">Tax Saved</div>
+        <div style="font-family:'Playfair Display';font-size:22px;color:white">₹ 38 L</div>
+        <div style="font-size:11px;color:#4ADE80">↑ Optimized</div>
+      </div>
+    </div>
+    <div class="strategy-content reveal" style="transition-delay:0.2s">
+      <h3 style="font-family:'Playfair Display';font-size:32px;color:white;line-height:1.3;margin-bottom:16px">
+        Smart Accounting<br>
+        <span style="color:var(--gold)">Drives Smart Growth</span>
+      </h3>
+      <p style="font-size:15px;color:rgba(245,240,232,0.6);line-height:1.8;margin-bottom:20px">
+        Our accounting strategy is not just about bookkeeping — it's a forward-looking approach that transforms financial data into decisive business intelligence.
+      </p>
+      <div class="strategy-steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <div class="step-title">Financial Diagnostics</div>
+            <div class="step-desc">Deep analysis of balance sheets, P&L, cash flows, and ratios to identify financial strengths and vulnerabilities.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <div class="step-title">Tax Optimization</div>
+            <div class="step-desc">Legal tax minimization strategies using deductions, exemptions, HUF structures, and timing of income recognition.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <div class="step-title">MIS & Reporting</div>
+            <div class="step-desc">Custom management information systems delivering real-time dashboards and actionable monthly reports.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <div class="step-title">Growth Architecture</div>
+            <div class="step-desc">Structured financial planning aligned to business goals with 1, 3, and 5-year projection models.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- INVESTMENT IDEAS -->
+<section id="investment">
+  <div class="section-header reveal">
+    <span class="section-tag">Wealth Building</span>
+    <h2 class="section-title">Investment Ideas</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="investment-cards">
+    <div class="inv-card reveal">
+      <div class="inv-icon">📈</div>
+      <div class="inv-title">Equity Markets</div>
+      <div class="inv-desc">Structured portfolio in blue-chip stocks and mid-caps with SIP-based approach. Risk-adjusted returns for long-term wealth creation.</div>
+      <div class="inv-return">
+        <span>12–18% p.a.</span>
+        <div class="inv-return-bar" style="width:80%"></div>
+      </div>
+    </div>
+    <div class="inv-card reveal" style="transition-delay:0.1s">
+      <div class="inv-icon">🏠</div>
+      <div class="inv-title">Real Estate</div>
+      <div class="inv-desc">Commercial and residential property advisory including REITs, joint development, and residential plots with legal due diligence.</div>
+      <div class="inv-return">
+        <span>8–15% p.a.</span>
+        <div class="inv-return-bar" style="width:65%"></div>
+      </div>
+    </div>
+    <div class="inv-card reveal" style="transition-delay:0.2s">
+      <div class="inv-icon">🪙</div>
+      <div class="inv-title">Gold & Bonds</div>
+      <div class="inv-desc">Sovereign Gold Bonds, Gold ETFs, and tax-saving bonds — capital preservation with consistent appreciation and tax benefits.</div>
+      <div class="inv-return">
+        <span>7–10% p.a.</span>
+        <div class="inv-return-bar" style="width:55%"></div>
+      </div>
+    </div>
+    <div class="inv-card reveal" style="transition-delay:0.3s">
+      <div class="inv-icon">🏦</div>
+      <div class="inv-title">Fixed Deposits & PPF</div>
+      <div class="inv-desc">Safe havens with guaranteed returns. Senior Citizen FD, PPF, NSC, and recurring deposits suited for risk-averse investors.</div>
+      <div class="inv-return">
+        <span>6–8% p.a.</span>
+        <div class="inv-return-bar" style="width:45%"></div>
+      </div>
+    </div>
+    <div class="inv-card reveal" style="transition-delay:0.1s">
+      <div class="inv-icon">🌿</div>
+      <div class="inv-title">Mutual Funds & ELSS</div>
+      <div class="inv-desc">Tax-saving ELSS funds with 3-year lock-in. Hybrid and debt funds for diversified portfolio construction under Section 80C.</div>
+      <div class="inv-return">
+        <span>10–16% p.a.</span>
+        <div class="inv-return-bar" style="width:72%"></div>
+      </div>
+    </div>
+    <div class="inv-card reveal" style="transition-delay:0.2s">
+      <div class="inv-icon">🚀</div>
+      <div class="inv-title">Startup & SME</div>
+      <div class="inv-desc">Angel investing and business expansion funding with thorough legal protection, shareholder agreements, and exit structuring.</div>
+      <div class="inv-return">
+        <span>20–40% p.a.</span>
+        <div class="inv-return-bar" style="width:90%"></div>
+      </div>
+    </div>
+    <div class="inv-card reveal" style="transition-delay:0.3s">
+      <div class="inv-icon">📱</div>
+      <div class="inv-title">Digital Assets</div>
+      <div class="inv-desc">Regulated digital investment exposure through crypto funds, RBI-compliant channels, and blockchain-based instruments with compliance advisory.</div>
+      <div class="inv-return">
+        <span>Variable</span>
+        <div class="inv-return-bar" style="width:85%;background:linear-gradient(90deg,#F59E0B,#EF4444)"></div>
+      </div>
+    </div>
+    <div class="inv-card reveal" style="transition-delay:0.4s">
+      <div class="inv-icon">🛡️</div>
+      <div class="inv-title">Insurance + ULIP</div>
+      <div class="inv-desc">Life, health, and term insurance bundled with ULIP-based investment plans for protection and growth in a single instrument.</div>
+      <div class="inv-return">
+        <span>8–12% p.a.</span>
+        <div class="inv-return-bar" style="width:58%"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- EMPLOYEE FINANCIAL ACCOUNTS -->
+<section id="employees" class="emp-section">
+  <div class="section-header reveal">
+    <span class="section-tag">Human Capital Finance</span>
+    <h2 class="section-title">Employee Financial Accounts & Wealth</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="emp-tabs">
+    <button class="tab-btn active" onclick="showTab('salary')">Salary & CTC</button>
+    <button class="tab-btn" onclick="showTab('tax')">Tax Planning</button>
+    <button class="tab-btn" onclick="showTab('wealth')">Wealth Building</button>
+    <button class="tab-btn" onclick="showTab('payroll')">Payroll</button>
+  </div>
+
+  <div id="tab-salary" class="tab-content active">
+    <div class="emp-grid">
+      <div class="emp-card reveal">
+        <div class="emp-card-icon">💰</div>
+        <div class="emp-card-title">CTC Structuring</div>
+        <div class="emp-card-desc">Design optimal CTC breakup with HRA, LTA, food coupons, and allowances to maximize in-hand salary while minimizing tax outgo.</div>
+        <div class="highlight">Up to 30% tax savings through smart salary structuring</div>
+      </div>
+      <div class="emp-card reveal" style="transition-delay:0.1s">
+        <div class="emp-card-icon">📋</div>
+        <div class="emp-card-title">Form 16 & ITR</div>
+        <div class="emp-card-desc">Accurate Form 16 generation and income tax return filing for all employees. Ensure error-free TDS computation and reconciliation.</div>
+        <div class="highlight">Annual ITR filing support for all staff</div>
+      </div>
+      <div class="emp-card reveal" style="transition-delay:0.2s">
+        <div class="emp-card-icon">🎁</div>
+        <div class="emp-card-title">Perquisites & Benefits</div>
+        <div class="emp-card-desc">Structuring of perquisites — company car, ESOP, accommodation, medical reimbursements — with full tax compliance and disclosure.</div>
+        <div class="highlight">Legal perquisite optimization advisory</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-tax" class="tab-content">
+    <div class="emp-grid">
+      <div class="emp-card reveal">
+        <div class="emp-card-icon">🧮</div>
+        <div class="emp-card-title">80C Investments</div>
+        <div class="emp-card-desc">Guide employees to maximize ₹1.5L deduction via EPF, PPF, NSC, ELSS, life insurance, tuition fees, and home loan principal.</div>
+        <div class="wealth-meter">
+          <div class="meter-label"><span>Utilized</span><span>₹1.5L / ₹1.5L</span></div>
+          <div class="meter-bar"><div class="meter-fill" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="emp-card reveal" style="transition-delay:0.1s">
+        <div class="emp-card-icon">🏥</div>
+        <div class="emp-card-title">Section 80D (Health)</div>
+        <div class="emp-card-desc">Health insurance premium deductions up to ₹75,000 for self, family, and parents. Medical expenditure advisory for senior parents.</div>
+        <div class="wealth-meter">
+          <div class="meter-label"><span>Coverage</span><span>₹75,000</span></div>
+          <div class="meter-bar"><div class="meter-fill" style="width:85%"></div></div>
+        </div>
+      </div>
+      <div class="emp-card reveal" style="transition-delay:0.2s">
+        <div class="emp-card-icon">🏗️</div>
+        <div class="emp-card-title">Home Loan Tax Benefits</div>
+        <div class="emp-card-desc">Deduction on interest (Sec 24) up to ₹2L and principal (Sec 80C). Dual benefits for joint home loans with strategic planning.</div>
+        <div class="wealth-meter">
+          <div class="meter-label"><span>Interest Deduction</span><span>₹2L</span></div>
+          <div class="meter-bar"><div class="meter-fill" style="width:75%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-wealth" class="tab-content">
+    <div class="emp-grid">
+      <div class="emp-card reveal">
+        <div class="emp-card-icon">📊</div>
+        <div class="emp-card-title">NPS (Sec 80CCD)</div>
+        <div class="emp-card-desc">National Pension System advisory. Additional ₹50,000 deduction under 80CCD(1B) over and above 80C limit. Employer NPS also deductible.</div>
+        <div class="highlight">Extra ₹50K deduction + retirement corpus building</div>
+      </div>
+      <div class="emp-card reveal" style="transition-delay:0.1s">
+        <div class="emp-card-icon">💼</div>
+        <div class="emp-card-title">Gratuity & Retirement</div>
+        <div class="emp-card-desc">Gratuity fund management, superannuation planning, and long-term retirement corpus strategy through employer-employee co-contribution schemes.</div>
+        <div class="highlight">Structured retirement wealth creation programs</div>
+      </div>
+      <div class="emp-card reveal" style="transition-delay:0.2s">
+        <div class="emp-card-icon">🌱</div>
+        <div class="emp-card-title">ESOP & RSU Advisory</div>
+        <div class="emp-card-desc">Tax planning for ESOP, RSU, and sweat equity. Capital gains computation, holding period optimization, and vesting schedule tax impact.</div>
+        <div class="highlight">Minimize ESOP tax with strategic timing</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-payroll" class="tab-content">
+    <div class="emp-grid">
+      <div class="emp-card reveal">
+        <div class="emp-card-icon">🖥️</div>
+        <div class="emp-card-title">Payroll Processing</div>
+        <div class="emp-card-desc">Monthly payroll computation including gross to net, TDS deduction, PF contribution, ESI, professional tax, and salary disbursement support.</div>
+        <div class="highlight">Fully automated payroll for 10 to 10,000 employees</div>
+      </div>
+      <div class="emp-card reveal" style="transition-delay:0.1s">
+        <div class="emp-card-icon">📁</div>
+        <div class="emp-card-title">Salary Slips & Records</div>
+        <div class="emp-card-desc">Digitized salary slip generation, annual pay register maintenance, and leave encashment calculations as per statutory requirements.</div>
+        <div class="highlight">Cloud-archived employee financial records</div>
+      </div>
+      <div class="emp-card reveal" style="transition-delay:0.2s">
+        <div class="emp-card-icon">⚡</div>
+        <div class="emp-card-title">Statutory Compliance</div>
+        <div class="emp-card-desc">Monthly and annual compliance — PF challans, ESI challans, Professional Tax returns, TDS payments, and Form 24Q quarterly filings.</div>
+        <div class="highlight">Zero penalty track record on payroll compliance</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ESI PF RETURNS -->
+<section id="compliance">
+  <div class="section-header reveal">
+    <span class="section-tag">Statutory Compliance</span>
+    <h2 class="section-title">ESI · PF · Returns</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="compliance-grid">
+    <div class="compliance-item reveal">
+      <div class="compliance-icon">🏥</div>
+      <div class="compliance-text">
+        <div class="compliance-title">ESI — Employee State Insurance</div>
+        <div class="compliance-desc">Registration, monthly challan generation, employee ESI card issuance, claim assistance, and half-yearly returns filing under ESIC Act 1948. Applicable for wages up to ₹21,000/month.</div>
+      </div>
+    </div>
+    <div class="compliance-item reveal" style="transition-delay:0.1s">
+      <div class="compliance-icon">🛡️</div>
+      <div class="compliance-text">
+        <div class="compliance-title">PF — Provident Fund</div>
+        <div class="compliance-desc">EPF registration, UAN generation, monthly ECR filing, PF transfer and withdrawal assistance, and annual PF return under EPF & MP Act 1952. Employee: 12%, Employer: 12%.</div>
+      </div>
+    </div>
+    <div class="compliance-item reveal" style="transition-delay:0.2s">
+      <div class="compliance-icon">📝</div>
+      <div class="compliance-text">
+        <div class="compliance-title">Income Tax Returns (ITR)</div>
+        <div class="compliance-desc">All ITR forms — ITR-1 to ITR-7 for individuals, HUF, firms, and companies. Timely filing, refund tracking, and response to IT department notices.</div>
+      </div>
+    </div>
+    <div class="compliance-item reveal" style="transition-delay:0.3s">
+      <div class="compliance-icon">🧾</div>
+      <div class="compliance-text">
+        <div class="compliance-title">GST Returns</div>
+        <div class="compliance-desc">Monthly GSTR-1, GSTR-3B, quarterly filings, annual GSTR-9 and 9C reconciliation, ITC matching, and GST audit for eligible businesses.</div>
+      </div>
+    </div>
+    <div class="compliance-item reveal" style="transition-delay:0.1s">
+      <div class="compliance-icon">✂️</div>
+      <div class="compliance-text">
+        <div class="compliance-title">TDS Returns (Form 24Q/26Q)</div>
+        <div class="compliance-desc">Quarterly TDS deduction computation, challan deposit, Form 24Q (salary) and 26Q (non-salary) filing, Form 16 & 16A generation, and TRACES compliance.</div>
+      </div>
+    </div>
+    <div class="compliance-item reveal" style="transition-delay:0.2s">
+      <div class="compliance-icon">📊</div>
+      <div class="compliance-text">
+        <div class="compliance-title">Professional Tax & Labour Laws</div>
+        <div class="compliance-desc">State-wise Professional Tax registration and returns. Labour law registrations under Shops Act, Contract Labour Act, Minimum Wages Act, and Maternity Benefit Act.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CTA / CONTACT -->
+<section id="contact" class="cta-section">
+  <div class="reveal">
+    <div class="hero-badge">Begin Your Journey</div>
+    <h2 class="cta-title">Ready to Protect<br><span style="color:var(--gold)">Your Financial Future?</span></h2>
+    <p class="cta-desc">Trusted by over 1,200 clients across India. Let's craft your legal and financial strategy today.</p>
+    <a href="tel:+91-99123 46295" class="btn-primary" style="font-size:14px;padding:18px 56px">
+      Book Free Consultation
+    </a>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-box reveal">
+      <div class="contact-box-icon">📍</div>
+      <div class="contact-box-label">Office</div>
+      <div class="contact-box-value">Nagamalli thota Jn , Kakinada</div>
+    </div>
+    <div class="contact-box reveal" style="transition-delay:0.1s">
+      <div class="contact-box-icon">📞</div>
+      <div class="contact-box-label">Phone</div>
+      <div class="contact-box-value">+91 99123 46295</div>
+    </div>
+    <div class="contact-box reveal" style="transition-delay:0.2s">
+      <div class="contact-box-icon">✉️</div>
+      <div class="contact-box-label">Email</div>
+      <div class="contact-box-value">rajubabugutala@gmail.com</div>
+    </div>
+    <div class="contact-box reveal" style="transition-delay:0.3s">
+      <div class="contact-box-icon">⏰</div>
+      <div class="contact-box-label">Hours</div>
+      <div class="contact-box-value">Mon–Sat: 9 AM – 7 PM</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Rajubabu Gutala</div>
+  <div class="footer-copy">© 2024 Rajubabu Law & Accountancy Services. All Rights Reserved.</div>
+  <div style="font-size:12px;color:rgba(201,168,76,0.5);letter-spacing:2px;">Est. 1999</div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
